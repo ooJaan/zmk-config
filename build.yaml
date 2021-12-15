@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: nrfmicro_13
+  - board: fistboardboard
     shield: corne_left
-  - board: nrfmicro_13
+  - board: fistboardboard
     shield: corne_right
