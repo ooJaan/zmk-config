@@ -9,7 +9,7 @@
 #include "arduino_pro_micro_pins.dtsi"
 
 / {
-	model = "mikoto";
+	model = "fistboard";
 	compatible = "ohJay, fistboard";
 
 	chosen {
