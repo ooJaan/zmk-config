@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: fistboardboard
+  - board: fistboard
     shield: corne_left
-  - board: fistboardboard
+  - board: fistboard
     shield: corne_right
