@@ -11,7 +11,7 @@
 #include <sys/sys_io.h>
 #include <devicetree.h>
 
-static int pinmux_mikoto_init(const struct device *port) {
+static int pinmux_fistboard_init(const struct device *port) {
     ARG_UNUSED(port);
 
 #if CONFIG_BOARD_FISTBOARD
