@@ -24,10 +24,10 @@
 
         default_layer {
             bindings = <
-          &kp ESC   &kp X   &kp N           &kp L   &kp C      &kp W               &kp K   &kp H      &kp G    &kp F   &kp Q  &kp BSLH
-          &kp TAB   &kp U   &kp I           &kp A   &kp E      &kp O               &kp S   &kp N      &kp R    &kp T   &kp D     &kp Y
- &kp LEFT_CONTROL   &kp Z   &kp X           &kp C   &kp P      &kp Z               &kp B   &kp M  &kp COMMA  &kp DOT   &kp J   &kp ESC
-                                   &kp LEFT_SHIFT   &mo 1  &kp SPACE            &kp RALT   &mo 2  &kp ENTER
+          &kp ESC   &kp X   &kp N           &kp L   &kp C      &kp W                &kp K   &kp H      &kp G    &kp F   &kp Q  &kp BSLH
+          &kp TAB   &kp U   &kp I           &kp A   &kp E      &kp O                &kp S   &kp N      &kp R    &kp T   &kp D     &kp Y
+ &kp LEFT_CONTROL   &kp Z   &kp X           &kp C   &kp P      &kp Z                &kp B   &kp M  &kp COMMA  &kp DOT   &kp J   &kp ESC
+                                   &kp LEFT_SHIFT   &mo 1  &kp SPACE            &kp ENTER   &mo 2   &kp RALT
             >;
         };
 
@@ -42,10 +42,30 @@
 
         layer_lower {
             bindings = <
-            &kp ESC   &kp X   &kp N           &kp L   &kp C      &kp W               &kp K   &kp H      &kp G    &kp F   &kp Q  &kp BSLH
-            &kp TAB   &kp U   &kp I           &kp A   &kp E      &kp O               &kp S   &kp N      &kp R    &kp T   &kp D     &kp Y
- &kp LEFT_CONTROL     &kp Z   &kp X           &kp C   &kp P      &kp Z               &kp B   &kp M  &kp COMMA  &kp DOT   &kp J   &kp ESC
-                                   &kp LEFT_SHIFT   &mo 1  &kp SPACE            &kp RALT   &mo 2  &kp ENTER
+ &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                  &kp F7        &kp F8        &kp F9       &kp F10       &kp F11    &kp F12
+    &kp  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp GRAVE
+ &trans        &trans        &trans        &trans        &trans        &trans               &kp UNDER      &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE  &kp TILDE
+                                           &trans        &trans        &trans                  &trans        &trans        &trans
             >;
         };
+
+        layer_Layer__3 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans            &trans  &trans  &trans
+            >;
+        };
+
+        layer_Layer__4 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans            &trans  &trans  &trans
+            >;
+        };
+
+    };
 };
