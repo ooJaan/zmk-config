@@ -1,7 +1,7 @@
 if SHIELD_FISTBOARD_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Fistboard"
+	default "fistboard"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
