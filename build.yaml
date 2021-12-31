@@ -14,6 +14,6 @@
 ---
 include:
   - board: fistboard
-    shield: corne_left
+    shield: fisrboard_left
   - board: fistboard
-    shield: corne_right
+    shield: fisrboard_right
