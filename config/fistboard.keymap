@@ -23,19 +23,10 @@
 
         default_layer {
             bindings = <
-  &kp ESC             &kp X           &kp V               &kp L             &kp C      &kp W                &kp K              &kp H                &kp G            &kp F   &kp Q  &kp MINUS
-  &kp TAB             &kp U  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT E      &kp O                &kp S  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T   &kp D      &kp Y
- &kp HOME  &kp LEFT_BRACKET   &kp SEMICOLON    &kp SINGLE_QUOTE             &kp P      &kp Z                &kp B              &kp M            &kp COMMA          &kp DOT   &kp J    &kp END
-                                                     &kp DELETE             &mo 2  &kp SPACE            &kp ENTER              &mo 3        &kp BACKSPACE
-            >;
-        };
-
-        layer_raise {
-            bindings = <
-     &trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
- &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans        &trans        &trans            &trans  &trans  &trans
+  &kp ESC             &kp X           &kp V               &kp L             &kp C      &kp W                    &kp K              &kp H                &kp G            &kp F   &kp Q  &kp MINUS
+  &kp TAB             &kp U  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT E      &kp O                    &kp S  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T   &kp D      &kp Y
+ &kp HOME  &kp LEFT_BRACKET   &kp SEMICOLON    &kp SINGLE_QUOTE             &kp P      &kp Z                    &kp B              &kp M            &kp COMMA          &kp DOT   &kp J    &kp END
+                                                     &kp DELETE             &mo 2  &kp SPACE            &kp BACKSPACE              &mo 3            &kp ENTER
             >;
         };
 
@@ -59,10 +50,10 @@
 
         layer_GAME {
             bindings = <
-        &kp ESC   &kp Q   &kp W   &kp E   &kp R      &kp T             &kp Z   &kp U          &kp I    &kp O      &kp P  &trans
- &kp LEFT_SHIFT   &kp A   &kp S   &kp D   &kp F      &kp G             &kp H   &kp J          &kp K    &kp L        &kp  &trans
-      &kp LCTRL   &kp Y   &kp X   &kp C   &kp V      &kp B             &kp N   &kp M      &kp COMMA  &kp DOT  &kp MINUS  &tog 4
-                                 &kp N1  &kp N2  &kp SPACE            &trans  &trans  &kp BACKSPACE
+        &kp ESC   &kp Q   &kp W   &kp E   &kp R      &kp T                    &kp Z   &kp U          &kp I    &kp O      &kp P  &trans
+ &kp LEFT_SHIFT   &kp A   &kp S   &kp D   &kp F      &kp G                    &kp H   &kp J          &kp K    &kp L        &kp  &trans
+      &kp LCTRL   &kp Y   &kp X   &kp C   &kp V      &kp B                    &kp N   &kp M      &kp COMMA  &kp DOT  &kp MINUS  &tog 4
+                                 &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
             >;
         };
 
