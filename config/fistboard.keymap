@@ -50,7 +50,7 @@
 
         layer_GAME {
             bindings = <
-        &kp ESC  &kp KP_NUMBER_3   &kp Q   &kp W   &kp E      &kp R                    &kp T   &kp U          &kp I    &kp O         &kp P  &trans
+        &kp ESC  &kp KP_NUMBER_3   &kp Q   &kp W   &kp E      &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &trans
         &kp TAB  &kp KP_NUMBER_4   &kp A   &kp S   &kp D      &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
  &kp LEFT_SHIFT  &kp KP_NUMBER_5   &kp Y   &kp X   &kp C      &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
                                           &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
