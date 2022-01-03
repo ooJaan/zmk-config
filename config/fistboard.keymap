@@ -44,8 +44,8 @@
 
         layer_Layer__3 {
             bindings = <
-       &tog 4     &kp C_PLAY_PAUSE &kp UNDERSCORE  &kp DE_W_RBRC  &kp DE_W_LBRC  &kp DE_CIRC            &kp DE_EXLM  &kp DE_LABK  &kp DE_RABK  &kp DE_EQL   &kp DE_AMPR  &kp C_NEXT
- &kp C_VOL_UP     &kp DE_W_BSLS    &kp DE_SLSH     &kp DE_W_RCBR  &kp DE_W_LCBR  &kp DE_ASTR            &kp DE_QUES  &kp DE_LPRN  &kp DE_RPRN  &kp DE_MINS  &kp DE_W_AT  &kp C_PREV
+       &tog 4     &kp C_PLAY_PAUSE &kp UNDERSCORE  &kp DE_W_LBRC  &kp DE_W_RBRC  &kp DE_CIRC            &kp DE_EXLM  &kp DE_LABK  &kp DE_RABK  &kp DE_EQL   &kp DE_AMPR  &kp C_NEXT
+ &kp C_VOL_UP     &kp DE_W_BSLS    &kp DE_SLSH     &kp DE_W_LCBR  &kp DE_W_RCBR  &kp DE_ASTR            &kp DE_QUES  &kp DE_LPRN  &kp DE_RPRN  &kp DE_MINS  &kp DE_W_AT  &kp C_PREV
  &kp C_VOL_DN     &kp DE_HASH      &kp DE_DLR      &kp DE_W_PIPE  &kp DE_W_TILD  &kp DE_ACUT            &kp DE_PLUS  &kp DE_PERC  &kp DE_DQUO  &kp DE_QUOT  &trans       &tog 3
                                                    &trans         &trans         &trans                 &trans       &trans            &trans
             >;
