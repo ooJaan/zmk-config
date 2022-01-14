@@ -60,10 +60,10 @@
         };
         layer_cad {
             bindings = <
-  &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7        &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUS
-  &kp LSHFT &kp A  &kp S  &kp D     &kp F      &kp G                &kp C_PREV  &kp N4        &kp N5      &kp N6  &kp KP_PLUS      &kp KP_DIVIDE
-  &kp TAB   &kp Y  &kp X  &kp C     &kp V      &kp B                &kp C_PP    &kp N1        &kp N2      &kp N3  &kp KP_MINUS     &tog 5
-                          &kp LCTRL &kp LSHIFT &kp SPACE            &kp ENTER   &kp KP_COMMA  &kp KP_DOT
+  &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7    &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUS
+  &kp LSHFT &kp A  &kp S  &kp D     &kp F      &kp G                &kp C_PREV  &kp N4    &kp N5      &kp N6  &kp KP_PLUS      &kp KP_DIVIDE
+  &kp TAB   &kp Y  &kp X  &kp C     &kp V      &kp B                &kp C_PP    &kp N1    &kp N2      &kp N3  &kp KP_MINUS     &tog 5
+                          &kp LCTRL &kp LSHIFT &kp SPACE            &kp ENTER   &kp BSPC  &kp KP_DOT
             >;
         };
     };
