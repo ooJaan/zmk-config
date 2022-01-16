@@ -15,14 +15,39 @@
 };
 
 / {
+    behaviors {
+            lh_pht: left_hand_positional_hold_tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "POSITIONAL_HOLD_TAP";
+                #binding-cells = <2>;
+                flavor = "tap-unless-interrupted";
+                tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+                quick-tap-ms = <200>;
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <6 7 8 9 10>;    // <---[[right-hand keys]]
+            };
+            
+            rh_pht: left_hand_positional_hold_tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "POSITIONAL_HOLD_TAP";
+                #binding-cells = <2>;
+                flavor = "tap-unless-interrupted";
+                tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+                quick-tap-ms = <200>;
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <1 2 3 4 5 >;    // <---[[right-hand keys]]
+            };
+        };
+
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-  &kp ESC   &kp X             &kp V           &kp L               &kp C             &kp W                &kp K          &kp H              &kp G                &kp F            &kp Q  &kp MINUS
-  &kp TAB   &kp U             &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT E  &kp O                &kp S          &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T  &kp D  &kp Z
-  &kp HOME  &kp LEFT_BRACKET  &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P             &kp Y                &kp B          &kp M              &kp COMMA            &kp DOT          &kp J  &kp END
-                                              &kp LEFT            &lt 1 DELETE      &kp SPACE            &kp BACKSPACE  &lt 2 ENTER        &kp RIGHT
+  &kp ESC   &kp X             &kp V           &kp L               &kp C                 &kp W                &kp K          &kp H                  &kp G                &kp F            &kp Q  &kp MINUS
+  &kp TAB   &kp U             &mt LEFT_ALT I  &mt LEFT_CONTROL A  &lh_pht LEFT_SHIFT E  &kp O                &kp S          &rh_pht RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T  &kp D  &kp Z
+  &kp HOME  &kp LEFT_BRACKET  &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P                 &kp Y                &kp B          &kp M                  &kp COMMA            &kp DOT          &kp J  &kp END
+                                              &kp LEFT            &lt 1 DELETE          &kp SPACE            &kp BACKSPACE  &lt 2 ENTER            &kp RIGHT
             >;
         };
         layer_lower {
@@ -60,7 +85,7 @@
         };
         layer_cad {
             bindings = <
-  &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7    &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUS
+  &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7    &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUScccccccccwww
   &kp LSHFT &kp A  &kp S  &kp D     &kp F      &kp G                &kp C_PREV  &kp N4    &kp N5      &kp N6  &kp KP_PLUS      &kp KP_DIVIDE
   &kp TAB   &kp Y  &kp X  &kp C     &kp V      &kp B                &kp C_PP    &kp N1    &kp N2      &kp N3  &kp KP_MINUS     &tog 5
                           &kp LCTRL &kp LSHIFT &kp SPACE            &kp ENTER   &kp BSPC  &kp KP_DOT
