@@ -15,7 +15,6 @@
 };
 
 / {
-    / {
     behaviors {
         lh_pht: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
