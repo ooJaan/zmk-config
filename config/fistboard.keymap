@@ -19,51 +19,52 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp ESC   &kp X             &kp V           &kp L               &kp C                 &kp W                &kp K          &kp H                  &kp G                &kp F            &kp Q  &kp MINUS
-                &kp TAB   &kp U             &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT E  &kp O                &kp S          &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T  &kp D  &kp Z
-                &kp HOME  &kp LEFT_BRACKET  &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P                 &kp Y                &kp B          &kp M                  &kp COMMA            &kp DOT          &kp J  &kp END
-                                                            &kp LEFT            &lt 1 DELETE          &kp SPACE            &kp BACKSPACE  &lt 2 ENTER            &kp RIGHT
-                            >;
-                };
+  &kp ESC   &kp X             &kp V           &kp L               &kp C             &kp W                &kp K          &kp H              &kp G                &kp F            &kp Q  &kp MINUS
+  &kp TAB   &kp U             &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT E  &kp O                &kp S          &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL R  &mt RIGHT_ALT T  &kp D  &kp Z
+  &kp HOME  &kp LEFT_BRACKET  &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P             &kp Y                &kp B          &kp M              &kp COMMA            &kp DOT          &kp J  &kp END
+                                              &kp LEFT            &lt 1 DELETE      &kp SPACE            &kp BACKSPACE  &lt 2 ENTER        &kp RIGHT
+            >;
+        };
         layer_lower {
             bindings = <
-                &kp F1  &kp F2    &kp F3           &kp F4               &kp F5             &kp F6                    &kp F7     &kp F8              &kp F9                &kp F10           &kp F11        &kp F12
-                &bt BT_SEL 0  &kp N1    &mt LEFT_ALT N2  &mt LEFT_CONTROL N3  &mt LEFT_SHIFT N4  &kp N5                    &kp N6     &mt RIGHT_SHIFT N7  &mt RIGHT_CONTROL N8  &mt RIGHT_ALT N9  &kp N0         &bt BT_SEL 2
-                &bt BT_SEL 1  &kp LEFT  &kp DOWN         &kp UP               &kp RIGHT          &kp PG_DN                 &kp PG_UP  &kp KP_PLUS         &kp KP_MINUS          &kp KP_MULTIPLY   &kp KP_DIVIDE  &bt BT_SEL 3
-                                                        &trans               &trans             &trans                    &trans     &trans              &trans
-                            >;
-                };
+       &kp F1  &kp F2    &kp F3           &kp F4               &kp F5             &kp F6                    &kp F7     &kp F8              &kp F9                &kp F10           &kp F11        &kp F12
+ &bt BT_SEL 0  &kp N1    &mt LEFT_ALT N2  &mt LEFT_CONTROL N3  &mt LEFT_SHIFT N4  &kp N5                    &kp N6     &mt RIGHT_SHIFT N7  &mt RIGHT_CONTROL N8  &mt RIGHT_ALT N9  &kp N0         &bt BT_SEL 2
+ &bt BT_SEL 1  &kp LEFT  &kp DOWN         &kp UP               &kp RIGHT          &kp PG_DN                 &kp PG_UP  &kp KP_PLUS         &kp KP_MINUS          &kp KP_MULTIPLY   &kp KP_DIVIDE  &bt BT_SEL 3
+                                          &trans               &trans             &trans                    &trans     &trans              &trans
+            >;
+        };
+
         layer_Layer__3 {
             bindings = <
-                &tog 5     &kp C_PLAY_PAUSE &kp UNDERSCORE  &kp DE_W_LBRC  &kp DE_W_RBRC  &kp DE_CIRC            &kp DE_EXLM  &kp DE_LABK  &kp DE_RABK  &kp DE_EQL   &kp DE_AMPR  &kp C_NEXT
-            &kp C_VOL_UP     &kp DE_W_BSLS    &kp DE_SLSH     &kp DE_W_LCBR  &kp DE_W_RCBR  &kp DE_ASTR            &kp DE_QUES  &kp DE_LPRN  &kp DE_RPRN  &kp DE_MINS  &kp DE_W_AT  &kp C_PREV
-            &kp C_VOL_DN     &kp DE_HASH      &kp DE_DLR      &kp DE_W_PIPE  &kp DE_W_TILD  &kp DE_ACUT            &kp DE_PLUS  &kp DE_PERC  &kp DE_DQUO  &kp DE_QUOT  &trans       &tog 3
-                                                            &trans         &trans         &trans                 &trans       &trans            &trans
-                        >;
-                    };
+       &tog 5     &kp C_PLAY_PAUSE &kp UNDERSCORE  &kp DE_W_LBRC  &kp DE_W_RBRC  &kp DE_CIRC            &kp DE_EXLM  &kp DE_LABK  &kp DE_RABK  &kp DE_EQL   &kp DE_AMPR  &kp C_NEXT
+ &kp C_VOL_UP     &kp DE_W_BSLS    &kp DE_SLSH     &kp DE_W_LCBR  &kp DE_W_RCBR  &kp DE_ASTR            &kp DE_QUES  &kp DE_LPRN  &kp DE_RPRN  &kp DE_MINS  &kp DE_W_AT  &kp C_PREV
+ &kp C_VOL_DN     &kp DE_HASH      &kp DE_DLR      &kp DE_W_PIPE  &kp DE_W_TILD  &kp DE_ACUT            &kp DE_PLUS  &kp DE_PERC  &kp DE_DQUO  &kp DE_QUOT  &trans       &tog 3
+                                                   &trans         &trans         &trans                 &trans       &trans            &trans
+            >;
+        };
         layer_GAME {
             bindings = <
-                    &kp ESC  &kp KP_NUMBER_3   &kp Q   &kp W   &kp E      &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &tog 3
-                    &kp TAB  &kp KP_NUMBER_4   &kp A   &kp S   &kp D      &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
-            &kp LEFT_SHIFT  &kp KP_NUMBER_5   &kp Y   &kp X   &kp C      &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
-                                                    &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
-                        >;
-            };
+        &kp ESC  &kp KP_NUMBER_3   &kp Q   &kp W   &kp E      &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &tog 3
+        &kp TAB  &kp KP_NUMBER_4   &kp A   &kp S   &kp D      &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
+ &kp LEFT_SHIFT  &kp KP_NUMBER_5   &kp Y   &kp X   &kp C      &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
+                                          &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
+            >;
+        };
         layer_CALC {
             bindings = <
-                &tog 4  &trans  &kp KP_N7        &kp KP_N8  &kp KP_NUMBER_9        &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &kp KP_N4        &kp KP_N5        &kp KP_N6        &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &kp KP_N1  &kp KP_NUMBER_2        &kp KP_N3        &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                            &kp KP_NUMBER_0        &kp COMMA  &kp KP_ENTER            &trans  &trans  &trans
-             >;
-            };
+ &tog 4  &trans  &kp KP_N7        &kp KP_N8  &kp KP_NUMBER_9        &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &kp KP_N4        &kp KP_N5        &kp KP_N6        &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &kp KP_N1  &kp KP_NUMBER_2        &kp KP_N3        &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                            &kp KP_NUMBER_0        &kp COMMA  &kp KP_ENTER            &trans  &trans  &trans
+            >;
+        };
         layer_cad {
             bindings = <
-                &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7    &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUScccccccccwww
-                &kp LSHFT &kp A  &kp S  &kp D     &kp F      &kp G                &kp C_PREV  &kp N4    &kp N5      &kp N6  &kp KP_PLUS      &kp KP_DIVIDE
-                &kp TAB   &kp Y  &kp X  &kp C     &kp V      &kp B                &kp C_PP    &kp N1    &kp N2      &kp N3  &kp KP_MINUS     &tog 5
-                                        &kp LCTRL &kp LSHIFT &kp SPACE            &kp ENTER   &kp BSPC  &kp KP_DOT
-                >;
-            };
+  &kp ESC   &kp Q  &kp W  &kp E     &kp R      &kp T                &kp C_NEXT  &kp N7    &kp N8      &kp N9  &kp KP_MULTIPLY  &kp MINUS
+  &kp LSHFT &kp A  &kp S  &kp D     &kp F      &kp G                &kp C_PREV  &kp N4    &kp N5      &kp N6  &kp KP_PLUS      &kp KP_DIVIDE
+  &kp TAB   &kp Y  &kp X  &kp C     &kp V      &kp B                &kp C_PP    &kp N1    &kp N2      &kp N3  &kp KP_MINUS     &tog 5
+                          &kp LCTRL &kp LSHIFT &kp SPACE            &kp ENTER   &kp BSPC  &kp KP_DOT
+            >;
         };
+    };
 };
