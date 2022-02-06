@@ -36,14 +36,24 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;    // <---[[left-hand keys]]
         };
+        ctl_pht: right_hand_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "POSITIONAL_HOLD_TAP_RIGHT";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <39>;    // <---[[alt keys]]
+        };
     };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp ESC         &kp X               &kp V               &kp L                   &kp C                   &kp W                   &kp K           &kp H                   &kp G           &kp F       &kp Q       &kp MINUS
-                &kp TAB         &kp U               &kp I               &kp A                   &lh_pht LEFT_SHIFT E    &kp O                   &kp S           &rh_pht RIGHT_SHIFT N   &kp R           &kp T       &kp D       &kp Z
-                &kp HOME        &kp LEFT_BRACKET    &kp SEMICOLON       &kp SINGLE_QUOTE        &kp P                   &kp Y                   &kp B           &kp M                   &kp COMMA       &kp DOT     &kp J       &kp END
+                &kp ESC         &kp X               &kp V               &kp L                   &kp C                   &kp W                   &kp K           &kp H                   &kp G                       &kp F       &kp Q       &kp MINUS
+                &kp TAB         &kp U               &kp I               &kp A                   &lh_pht LEFT_SHIFT E    &kp O                   &kp S           &rh_pht RIGHT_SHIFT N   &ctl_pht RIGHT_CONTROL R    &kp T       &kp D       &kp Z
+                &kp HOME        &kp LEFT_BRACKET    &kp SEMICOLON       &kp SINGLE_QUOTE        &kp P                   &kp Y                   &kp B           &kp M                   &kp COMMA                   &kp DOT     &kp J       &kp END
                                                                         &kp LEFT                &lt 1 DELETE            &kp SPACE               &kp BACKSPACE   &lt 2 ENTER             &kp RIGHT
                             >;
                     };
@@ -66,10 +76,10 @@
         };
         layer_GAME {
             bindings = <
-                &kp ESC  &kp KP_NUMBER_3   &kp Q   &kp W   &kp E      &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &tog 3
-                &kp TAB  &kp KP_NUMBER_4   &kp A   &kp S   &kp D      &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
-        &kp LEFT_SHIFT  &kp KP_NUMBER_5   &kp Y   &kp X   &kp C      &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
-                                                &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
+                &kp ESC         &kp N5   &kp Q   &kp W   &kp E   &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &tog 3
+                &kp LEFT_SHIFT  &kp N4   &kp A   &kp S   &kp D   &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
+                &kp TAB         &kp N3   &kp Y   &kp X   &kp C   &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
+                                                 &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
             >;
         };
         layer_CALC {
