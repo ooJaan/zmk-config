@@ -38,7 +38,7 @@
         };
         ctl_pht: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP_RIGHT";
+            label = "POSITIONAL_HOLD_TAP_Control";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
