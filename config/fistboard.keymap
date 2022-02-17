@@ -77,9 +77,9 @@
         layer_GAME {
             bindings = <
                 &kp ESC         &kp N5   &kp Q   &kp W   &kp E   &kp R                   &trans   &kp U          &kp I    &kp O         &kp P  &tog 3
-                &kp LEFT_SHIFT  &kp N4   &kp A   &kp S   &kp D   &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp T
-                &kp TAB         &kp N3   &kp Y   &kp X   &kp C   &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp MINUS  &trans
-                                                 &kp N1  &kp N2  &kp SPACE            &kp BACKSPACE  &trans  &kp BACKSPACE
+                &kp LEFT_SHIFT  &kp N4   &kp A   &kp S   &kp D   &kp F                    &kp H   &kp J          &kp K    &kp L  &kp C_VOL_UP   &kp C_VOL_DN
+                &kp TAB         &kp N3   &kp Y   &kp X   &kp C   &kp V                    &kp N   &kp M      &kp COMMA  &kp DOT     &kp LALT  &trans
+                                                 &kp N1  &kp N2  &kp SPACE            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT
             >;
         };
         layer_CALC {
