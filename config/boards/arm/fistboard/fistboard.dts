@@ -10,7 +10,7 @@
 
 / {
 	model = "fistboard";
-	compatible = "ohJay, fistboard";
+	compatible = "fistboard";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
