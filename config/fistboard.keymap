@@ -24,7 +24,7 @@
             quick-tap-ms = <300>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            
+        };    
         lh_pht: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_LEFT";
@@ -44,16 +44,6 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;    // <---[[left-hand keys]]
-        };
-        ctl_pht: right_control_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP_Control";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <18 36 39 42>;    // <---[[ctl keys]]
         };
     };
     keymap {
