@@ -16,6 +16,15 @@
 
 / {
     behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <450>;
+            quick-tap-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            
         lh_pht: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_LEFT";
@@ -51,9 +60,9 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp ESC                &kp X               &kp V               &kp L                   &kp C                   &kp W                   &kp K           &kp H                   &kp G                       &kp F       &kp Q       &kp MINUS
-                &kp TAB                &kp U               &kp I               &kp A                   &lh_pht LEFT_SHIFT E    &kp O                   &kp S           &rh_pht RIGHT_SHIFT N   &ctl_pht RIGHT_CONTROL R    &kp T       &kp D       &kp Z
-                &mt LEFT_CONTROL HOME  &kp LEFT_BRACKET    &kp SEMICOLON       &kp SINGLE_QUOTE        &kp P                   &kp Y                   &kp B           &kp M                   &kp COMMA                   &kp DOT     &kp J       &mt RIGHT_CONTROL END
+                &kp ESC                &kp X               &kp V               &kp L                   &kp C                   &kp W                   &kp K           &kp H                   &kp G                       &kp F            &kp Q       &kp MINUS
+                &kp TAB                &kp U               &hm LEFT_ALT I      &hm LEFT_CONTROL A      &lh_pht LEFT_SHIFT E    &kp O                   &kp S           &rh_pht RIGHT_SHIFT N   &hm RIGHT_CONTROL R         &kp RIGHT_ALT T  &kp D       &kp Z
+                &mt LEFT_CONTROL HOME  &kp LEFT_BRACKET    &kp SEMICOLON       &kp SINGLE_QUOTE        &kp P                   &kp Y                   &kp B           &kp M                   &kp COMMA                   &kp DOT          &kp J       &mt RIGHT_CONTROL END
                                                                         &kp LEFT                &lt 1 DELETE            &kp SPACE               &kp BACKSPACE   &lt 2 ENTER             &kp RIGHT
                             >;
                     };
