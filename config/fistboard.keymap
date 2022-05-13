@@ -11,7 +11,7 @@
 #include "german-keymap.h"
 
 &mt {
-    tapping-term-ms = <900>;
+    tapping-term-ms = <500>;
 };
 
 / {
