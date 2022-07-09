@@ -63,6 +63,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <18 36 39 42>;    // <---[[ctl keys]]
     };
+    };
 
 
     keymap {
