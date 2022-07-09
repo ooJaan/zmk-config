@@ -60,7 +60,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
-            bindings = <&kp>, <&hm>;
+            bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <18 36 39 42>;    // <---[[ctl keys]]
     };
 
@@ -71,7 +71,7 @@
         default_layer {
             bindings = <
                &kp ESC             &kp X           &kp V               &kp L                 &kp C      &kp W     &kp K                  &kp H                &kp G            &kp F       &kp Q                &kp MINUS
-               &kp TAB        &hm LWIN U  &hm LEFT_ALT I  &hm LEFT_CONTROL A  &lh_pht LEFT_SHIFT E      &kp O     &kp S  &rh_pht RIGHT_SHIFT N  &ctl_pht RCTRL RCTRL R  &hm RIGHT_ALT T  &hm RWIN D                    &kp Z
+               &kp TAB        &hm LWIN U  &hm LEFT_ALT I  &hm LEFT_CONTROL A  &lh_pht LEFT_SHIFT E      &kp O     &kp S  &rh_pht RIGHT_SHIFT N  &ctl_pht RCTRL R  &hm RIGHT_ALT T  &hm RWIN D                    &kp Z
  &mt LEFT_CONTROL LEFT  &kp LEFT_BRACKET   &kp SEMICOLON    &kp SINGLE_QUOTE                 &kp P      &kp Y     &kp B                  &kp M            &kp COMMA          &kp DOT       &kp J  &mt RIGHT_CONTROL RIGHT
                                                                 &kp LEFT_WIN          &lt 1 DELETE  &kp SPACE  &kp BSPC            &lt 2 ENTER       &lt 4 LEFT_WIN
             >;
