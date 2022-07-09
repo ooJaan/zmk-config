@@ -83,7 +83,7 @@
             bindings = <
        &tog 4    &kp C_PLAY_PAUSE        &kp UNDERSCORE               &kp DE_W_LBRC             &kp DE_W_RBRC  &kp DE_CIRC  &kp DE_EXLM              &kp DE_LABK                &kp DE_RABK             &kp DE_EQL       &kp DE_AMPR  &kp C_NEXT
  &kp C_VOL_UP  &hm LWIN DE_W_BSLS  &mt LEFT_ALT DE_SLSH  &mt LEFT_CONTROL DE_W_LCBR  &mt LEFT_SHIFT DE_W_RCBR  &kp DE_ASTR  &kp DE_QUES  &mt RIGHT_SHIFT DE_LPRN  &mt RIGHT_CONTROL DE_RPRN  &mt RIGHT_ALT DE_MINS  &hm LWIN DE_W_AT  &kp C_PREV
- &kp C_VOL_DN         &kp DE_HASH            &kp DE_DLR               &kp DE_W_PIPE             &kp DE_W_TILD  &kp DE_ACUT  &kp DE_PLUS              &kp DE_PERC                &kp DE_DQUO            &kp DE_QUOT    &kp UNDERSCORE      &tog 3
+ &kp C_VOL_DN         &kp DE_HASH            &kp DE_DLR               &kp DE_W_PIPE             &kp DE_W_TILD  &kp DE_ACUT  &kp DE_PLUS              &kp DE_PERC                &kp DE_DQUO            &kp DE_QUOT    &kp DE_UNDS      &tog 3
                                                                              &trans                    &trans       &trans       &trans                   &trans                     &trans
             >;
         };
