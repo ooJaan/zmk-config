@@ -30,8 +30,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_LEFT";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
                 <&kp>,
@@ -43,8 +43,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_RIGHT";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
                 <&kp>,
@@ -61,7 +61,7 @@
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <18 36 39 42>;    // <---[[ctl keys]]
+            hold-trigger-key-positions = <39>;    // <---[[ctl keys]]
     };
     };
 
