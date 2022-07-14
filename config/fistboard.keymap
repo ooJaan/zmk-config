@@ -19,9 +19,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <350>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -72,7 +72,7 @@
         default_layer {
             bindings = <
                &kp ESC             &kp X           &kp V               &kp L                 &kp C      &kp W     &kp K                  &kp H                &kp G            &kp F       &kp Q                &kp MINUS
-               &kp TAB        &hm LWIN U  &hm LEFT_ALT I  &hm LEFT_CONTROL A  &lh_pht LEFT_SHIFT E      &kp O     &kp S  &rh_pht RIGHT_SHIFT N            &ctl_pht RIGHT_CONTROL R   &hm RIGHT_ALT T  &hm RWIN D                    &kp Z
+               &kp TAB        &hm LWIN U  &hm LEFT_ALT I  &hm LEFT_CONTROL A  &lh_pht LEFT_SHIFT E      &kp O     &kp S  &rh_pht RIGHT_SHIFT N            &hm RIGHT_CONTROL R   &hm RIGHT_ALT T  &hm RWIN D                    &kp Z
  &mt LEFT_CONTROL LEFT  &kp LEFT_BRACKET   &kp SEMICOLON    &kp SINGLE_QUOTE                 &kp P      &kp Y     &kp B                  &kp M            &kp COMMA          &kp DOT       &kp J  &mt RIGHT_CONTROL RIGHT
                                                                 &kp LEFT_WIN          &lt 1 DELETE  &kp SPACE  &kp BSPC            &lt 2 ENTER       &lt 4 LEFT_WIN
             >;
