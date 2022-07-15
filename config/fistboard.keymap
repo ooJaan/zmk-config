@@ -31,7 +31,7 @@
             label = "POSITIONAL_HOLD_TAP_LEFT";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <125>;// <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <110>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
                 <&kp>,
@@ -44,7 +44,7 @@
             label = "POSITIONAL_HOLD_TAP_RIGHT";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <125>;// <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <110>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
                 <&kp>,
