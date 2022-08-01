@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_LEFT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <110>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
@@ -43,7 +43,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_RIGHT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <110>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings =
