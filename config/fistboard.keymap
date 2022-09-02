@@ -75,7 +75,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <39>;    // <---[[ctl keys]]
     };
-    };
+};
 
 
     keymap {
@@ -83,9 +83,9 @@
 
         default_layer {
             bindings = <
-                as(ESC)                 as(X)               as(V)           as(L)               as(C)   as(W)           as(K)   as(H)   as(G)       as(F)   as(Q)   as(MINUS)
-                &kp TAB                 as(U)               as(I)           as(A)               as(E)   as(O)           as(S)   as(N)   as(R)       as(T)   as(D)   as(Z)
-                &mt LEFT_CONTROL LEFT   as(LEFT_BRACKET)    as(SEMICOLON)   as(SINGLE_QUOTE)    as(P)   as(Y)           as(B)   as(M)   as(COMMA)   as(DOT) as(J)   &mt RIGHT_CONTROL RIGHT
+                AS(ESC)                 AS(X)               AS(V)           AS(L)               AS(C)   AS(W)           AS(K)   AS(H)   AS(G)       AS(F)   AS(Q)   AS(MINUS)
+                &kp TAB                 AS(U)               AS(I)           AS(A)               AS(E)   AS(O)           AS(S)   AS(N)   AS(R)       AS(T)   AS(D)   AS(Z)
+                &mt LEFT_CONTROL LEFT   AS(LEFT_BRACKET)    AS(SEMICOLON)   AS(SINGLE_QUOTE)    AS(P)   AS(Y)           AS(B)   AS(M)   AS(COMMA)   AS(DOT) AS(J)   &mt RIGHT_CONTROL RIGHT
                                                             &kp LEFT_WIN    &lt 1 DELETE  &kp SPACE                         &kp BSPC    &lt 2 ENTER       &lt 4 LEFT_WIN
             >;
         };
