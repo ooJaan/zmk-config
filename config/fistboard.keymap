@@ -9,12 +9,24 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
 &mt {
     tapping-term-ms = <500>;
 };
 
 / {
     behaviors {
+    
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -71,9 +83,9 @@
 
         default_layer {
             bindings = <
-               &kp ESC             &kp X           &kp V               &kp L                 &kp C      &kp W     &kp K                  &kp H                &kp G            &kp F       &kp Q                &kp MINUS
-               &kp TAB        &hm LWIN U  &hm LEFT_ALT I  &hm LEFT_CONTROL A  &lh_pht LEFT_SHIFT E      &kp O     &kp S  &rh_pht RIGHT_SHIFT N            &hm RIGHT_CONTROL R   &hm RIGHT_ALT T  &hm RWIN D                    &kp Z
- &mt LEFT_CONTROL LEFT  &kp LEFT_BRACKET   &kp SEMICOLON    &kp SINGLE_QUOTE                 &kp P      &kp Y     &kp B                  &kp M            &kp COMMA          &kp DOT       &kp J  &mt RIGHT_CONTROL RIGHT
+               as(ESC)             as(X)           as(V)               as(L)                 as(C)      as(W)     as(K)                 as(H)               as(G)            as(F)       as(Q)                as(MINUS)
+               &kp TAB        as(U)  as(I) as(A) as(E)      as(O)     as(S)  as(N)            as(R)   as(T)  as(D)                   as(Z)
+ &mt LEFT_CONTROL LEFT  as(LEFT_BRACKET)   as(SEMICOLON)    as(SINGLE_QUOTE)              as(P)     as(Y)     as(B)                  as(M)            as(COMMA)          as(DOT)       as(J)  &mt RIGHT_CONTROL RIGHT
                                                                 &kp LEFT_WIN          &lt 1 DELETE  &kp SPACE  &kp BSPC            &lt 2 ENTER       &lt 4 LEFT_WIN
             >;
         };
