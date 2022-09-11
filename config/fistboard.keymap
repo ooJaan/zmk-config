@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings =
@@ -81,9 +81,9 @@
 
         default_layer {
             bindings = <
-                &kp ESC                 &kp X               &kp V           &kp L               &kp C   &kp W           &kp K   &kp H               &kp G           &kp F   &kp Q   &kp MINUS
-                &kp TAB                 &kp U               &hm LEFT_ALT I  &hm LEFT_CONTROL A  &kp E   &kp O           &kp S   &hm RIGHT_CONTROL N &mt RIGHT_ALT R &kp T   &kp D   &kp Z
-                &mt LEFT_CONTROL LEFT   &kp LEFT_BRACKET    &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P   &kp Y           &kp B   &kp M               &kp COMMA       &kp DOT &kp J   &mt RIGHT_CONTROL RIGHT
+                &kp ESC                 &kp X               &kp V           &kp L               &kp C   &kp W           &kp K   &kp H  &kp G               &kp F   &kp Q   &kp MINUS
+                &kp TAB                 &kp U               &hm LEFT_ALT I  &hm LEFT_CONTROL A  &kp E   &kp O           &kp S   &kp N  &hm RIGHT_CONTROL R &hm RIGHT_ALT T &kp D   &kp Z
+                &mt LEFT_CONTROL LEFT   &kp LEFT_BRACKET    &kp SEMICOLON   &kp SINGLE_QUOTE    &kp P   &kp Y           &kp B   &kp M  &kp COMMA           &kp DOT &kp J   &mt RIGHT_CONTROL RIGHT
                                                             &lt 1 LEFT_WIN  &lt 2 ENTER      &kp SPACE               &kp BSPC    &kp LEFT_SHIFT       &lt 4 LEFT_WIN
             >;
         };
