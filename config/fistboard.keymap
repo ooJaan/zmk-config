@@ -33,7 +33,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             retro-tap;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings =
                 <&kp>,
                 <&kp>;
