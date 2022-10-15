@@ -122,7 +122,7 @@
             bindings = <
  &kp LEFT_SHIFT  &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MULTIPLY     &trans      &trans     &kp PG_DN     &kp PG_UP      &trans  &bootloader
        &kp LGUI   &kp PLUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp KP_DIVIDE   &kp HOME    &kp LEFT      &kp DOWN        &kp UP   &kp RIGHT      &kp END
-      &kp RCTRL  &kp ENTER  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &tog 4  &kp PG_DN  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV       &trans
+      &kp LCTRL  &kp ENTER  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &tog 4  &kp PG_DN  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV       &trans
                                                &kp DOT     &kp COMMA           &kp N0     &trans      &trans        &trans
             >;
         };
