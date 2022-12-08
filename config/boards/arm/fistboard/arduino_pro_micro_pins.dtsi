@@ -30,9 +30,6 @@
 			, <19 0 &gpio0 2 0>	
 			, <20 0 &gpio0 30 0>
 			, <21 0 &gpio0 12 0>	
-			; <50 0 &gpio0 29 0>
-			; <51 0 &gpio0 20 0>
-			; <52 0 &gpio0 26 0>
 	};
 
 	pro_micro_a: connector_a {
