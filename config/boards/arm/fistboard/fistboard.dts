@@ -18,18 +18,11 @@
 		zephyr,flash = &flash0;
 	};
 
-	leds {
-		compatible = "gpio-leds";
-		blue_led: led_0 {
-			gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
-			label = "Blue LED";
-		};
-	};
 
 	vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
-		io-channels = <&adc 2>;
+		io-channels = <&adc 3>;
 		output-ohms = <1000000>;
 		full-ohms = <(1000000 + 430000)>;
 	};
