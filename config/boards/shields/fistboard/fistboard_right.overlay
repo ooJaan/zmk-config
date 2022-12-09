@@ -12,12 +12,12 @@
 
 &kscan0 {
 	col-gpios
-		= <&acn 12 GPIO_ACTIVE_HIGH>
-		, <&acn 24 GPIO_ACTIVE_HIGH>
-		, <&acn 2 GPIO_ACTIVE_HIGH>
-		, <&acn 6 GPIO_ACTIVE_HIGH>
+		= <&acn 31 GPIO_ACTIVE_HIGH>
 		, <&acn 29 GPIO_ACTIVE_HIGH>
-		, <&acn 31 GPIO_ACTIVE_HIGH>
+		, <&acn 6 GPIO_ACTIVE_HIGH>
+		, <&acn 2 GPIO_ACTIVE_HIGH>
+		, <&acn 24 GPIO_ACTIVE_HIGH>
+		, <&acn 12 GPIO_ACTIVE_HIGH>
 		;
 
 	row-gpios
