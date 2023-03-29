@@ -14,4 +14,5 @@ The keymap is and always will be a work in progress. Also I highly encourage you
   - Homerow Mods
   - Numrow with Function Keys
   - Bluetooth Controls
+- UF2 Firmware Output with automatic Github Actions
   
