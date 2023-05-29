@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <kernel.h>
+//#include <kernel.h>
 #include <device.h>
 #include <init.h>
 #include <drivers/gpio.h>
