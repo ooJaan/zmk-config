@@ -12,9 +12,6 @@ if SHIELD_FISTBOARD_LEFT || SHIELD_FISTBOARD_RIGHT
 
 config ZMK_SPLIT
 	default y
- 
-
-endif # ZMK_DISPLAY
 
 
 endif
