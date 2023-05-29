@@ -34,7 +34,7 @@
 			, <21 0 &gpio0 4 0>	
 			;
 	};
-	acn: connector {
+	acn: connector_b {
 		compatible = "arduino-pro-micro";
 		#gpio-cells = <2>;
 		gpio-map-mask = <0xffffffff 0xffffffc0>;
