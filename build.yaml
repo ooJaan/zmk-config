@@ -14,6 +14,8 @@
 ---
 include:
   - board: fistboard
-    shield: fistboard_left nice_view
+    snippet: studio-rpc-usb-uart
+    shield: fistboard_left
   - board: fistboard
+    snippet: studio-rpc-usb-uart
     shield: fistboard_right
