@@ -5,7 +5,7 @@ Edit with the [ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
 <img width="1504" height="579" alt="image" src="https://github.com/user-attachments/assets/a4d1533e-22c2-496e-8370-63f24a2326aa" />
 
 
-The development has staled a little, since the keymap has been getting better and better.
+The development has stalled a little, since there is not much to change anymore.
 
 ### Features:
 - Custom Shield
